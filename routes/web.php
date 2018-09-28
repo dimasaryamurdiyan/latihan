@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('index');
 });
 Route::get('/page2', function () {
@@ -19,4 +19,8 @@ Route::get('/page2', function () {
 });
 Route::get('/page3', function () {
     return view('page3');
-});
+});*/
+Route::get('/controller/tambah','conttest@tambah');//Route::get('ditampilin_di_web','class fx@fx_name');
+Route::get('/','conttest@index');
+Route::get('/page2','conttest@page2');
+Route::get('/page3','conttest@page3');
