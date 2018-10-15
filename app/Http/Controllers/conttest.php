@@ -19,4 +19,7 @@ class conttest extends Controller
     function page3(){
     	return view('page3');
     }
+    function page4(){
+    	return view('page4');
+    }
 }

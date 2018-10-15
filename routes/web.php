@@ -24,3 +24,4 @@ Route::get('/controller/tambah','conttest@tambah');//Route::get('ditampilin_di_w
 Route::get('/','conttest@index');
 Route::get('/page2','conttest@page2');
 Route::get('/page3','conttest@page3');
+Route::get('/page4','conttest@page4');
