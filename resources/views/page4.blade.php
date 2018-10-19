@@ -17,6 +17,22 @@
                     <th scope="col">Aksi</th>              
                 </tr>
                 </thead>
+                <tbody>
+                    @foreach($data as $i=>$value)
+                <tr>
+                    <th>{{$value->nim}}</th>
+                    <th>{{$value->nama}}</th>
+                    <th>{{$value->email}}</th>
+                    <th>{{$value->nohp}}</th>
+                    <th>{{$value->alamat}}</th>
+                    <th>
+                        <a href="">Edit</a>
+                        <button type="">Delete</button>
+                    </th>
+                    
+                </tr>
+                @endforeach
+                </tbody>
             </table>
         </div>
         <!-- /.content -->
