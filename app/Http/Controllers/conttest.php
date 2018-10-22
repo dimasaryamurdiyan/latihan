@@ -22,4 +22,7 @@ class conttest extends Controller
     function page4(){
     	return view('page4');
     }
+    function page5(){
+    	return view('page5');
+    }
 }

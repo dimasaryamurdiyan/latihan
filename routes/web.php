@@ -25,6 +25,8 @@ Route::get('/','conttest@index');
 Route::get('/page2','conttest@page2');
 Route::get('/page3','conttest@page3');
 //Route::get('/page4','conttest@page4');
+//Route::get('/page5','conttest@page5');
 
 Route::resource('diweb','namacontroller');
-Route::resource('/page4','Mahasiswa');
+Route::resource('mahasiswa','Mahasiswa');
+Route::resource('user','User');

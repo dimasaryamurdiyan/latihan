@@ -46,7 +46,10 @@
                 <a href="/page3">- Sidebar 2</a>
             </li>
              <li>
-                <a href="/page4">Mahasiswa</a>
+                <a href="/mahasiswa">Mahasiswa</a>
+            </li>
+            <li>
+                <a href="/user">User</a>
             </li>
         </ul>
     </aside>
