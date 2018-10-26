@@ -10,7 +10,7 @@
     <!-- Canonical -->
     <link rel="canonical" href="">
 
-    <title>Laravel 5.7</title>
+    <title>Laravel 5.4</title>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 
     <!-- Main Styles CSS -->
-    <link href="main.css" rel="stylesheet">
+    <link href="/main.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -40,13 +40,17 @@
                 <a href="/">Home</a>
             </li>
             <li>
-                <a href="/page2">- Sidebar 1</a>
+                <a href="/contoh">Contoh</a>
+                <ul class="main-nav">
+                    <li><a href="/contoh/halamandua">halaman dua</a></li>
+                    <li><a href="/contoh/halamantiga">halaman tiga</a></li>
+                </ul>
             </li>
             <li>
-                <a href="/page3">- Sidebar 2</a>
-            </li>
-             <li>
                 <a href="/mahasiswa">Mahasiswa</a>
+                <ul class="main-nav">
+                    <li><a href="{{route('mahasiswa.create')}}">tambah</a></li>
+                </ul>
             </li>
             <li>
                 <a href="/user">User</a>
@@ -67,7 +71,7 @@
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 
 <!-- Custom JavaScript -->
-<script src="/assets/js/custom.js"></script> {{-- ini cara memanggil js dari folder assets -> js --}}
+<script src="/assets/js/custom.js"></script>
 </body>
 
 </html>

@@ -6,6 +6,11 @@
         <div class="content">
             <!-- Remove This Before You Start -->
             <h1>TABEL MAHASISWA</h1><br>
+            @if(Session::has('alert-success'))
+                <div class="alert alert-success">
+                    <strong>{{ \Illuminate\Support\Facades\Session::get('alert-success') }}</strong>
+                </div>
+            @endif
             <table class="table table-bordered table-hover">
                 <thead>
                 <tr>
@@ -26,8 +31,12 @@
                     <th>{{$value->nohp}}</th>
                     <th>{{$value->alamat}}</th>
                     <th>
-                        <a href="">Edit</a>
-                        <button type="">Delete</button>
+                        <form action="{{route('mahasiswa.destroy',$value->nim)}}" method="post">
+                            {{csrf_field()}}
+                            {{method_field('DELETE')}}
+                            <a href="{{route('mahasiswa.edit',$value->nim)}}" class="btn btn-sm btn-primary">Edit</a>
+                            <button class="btn btn-sm btn-danger" type="submit" onclick="return confirm('Yakin ingin menghapus data?')">Delete</button>                           
+                        </form>
                     </th>
                     
                 </tr>
